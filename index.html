@@ -1635,21 +1635,52 @@ tr.producto-bajo-stock:hover td {
             </button>
         </div>
 
-        <!-- Sidebar -->
-        <div id="sidebar" class="sidebar p-4 flex flex-col">
-            <h2 id="businessName" class="text-2xl font-bold mb-6 text-white">Mi Negocio</h2>
-            <nav class="space-y-2 flex-grow">
-                <button onclick="mostrarSeccion('inicio')" id="nav-inicio" class="active"><i class="fas fa-home"></i> Inicio</button>
-                <button onclick="mostrarSeccion('dashboard')" id="nav-dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</button>
-                <button onclick="mostrarSeccion('inventario')" id="nav-inventario"><i class="fas fa-boxes"></i> Inventario</button>
-                <button onclick="mostrarSeccion('ventas')" id="nav-ventas"><i class="fas fa-shopping-cart"></i> Ventas</button>
-                <button onclick="mostrarSeccion('clientes')" id="nav-clientes"><i class="fas fa-users"></i> Clientes</button>
-                <button onclick="mostrarSeccion('fiar')" id="nav-fiar"><i class="fas fa-handshake"></i> Fiar</button>
-                <button onclick="mostrarSeccion('reportes')" id="nav-reportes"><i class="fas fa-chart-line"></i> Reportes</button>
-                <button onclick="mostrarSeccion('proveedores')" id="nav-proveedores"><i class="fas fa-truck"></i> Proveedores</button>
-                <button onclick="mostrarSeccion('config')" id="nav-config"><i class="fas fa-cog"></i> Configuración</button>
-            </nav>
-        </div>
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar p-4 flex flex-col">
+    <h2 id="businessName" class="text-2xl font-bold mb-6 text-white">Mi Negocio</h2>
+    <nav class="space-y-2 flex-grow">
+        <!-- 1. Inicio - Vista principal -->
+        <button onclick="mostrarSeccion('inicio')" id="nav-inicio" class="active">
+            <i class="fas fa-home"></i> Inicio
+        </button>
+        
+        <!-- 2. Dashboard - Resumen operativo -->
+        <button onclick="mostrarSeccion('dashboard')" id="nav-dashboard">
+            <i class="fas fa-tachometer-alt"></i> Dashboard
+        </button>
+        
+        <!-- 3. Operaciones comerciales -->
+        <button onclick="mostrarSeccion('ventas')" id="nav-ventas">
+            <i class="fas fa-shopping-cart"></i> Ventas
+        </button>
+        <button onclick="mostrarSeccion('fiar')" id="nav-fiar">
+            <i class="fas fa-handshake"></i> Fiar
+        </button>
+        
+        <!-- 4. Gestión de inventario -->
+        <button onclick="mostrarSeccion('inventario')" id="nav-inventario">
+            <i class="fas fa-boxes"></i> Inventario
+        </button>
+        
+        <!-- 5. Gestión de relaciones -->
+        <button onclick="mostrarSeccion('clientes')" id="nav-clientes">
+            <i class="fas fa-users"></i> Clientes
+        </button>
+        <button onclick="mostrarSeccion('proveedores')" id="nav-proveedores">
+            <i class="fas fa-truck"></i> Proveedores
+        </button>
+        
+        <!-- 6. Análisis y reportes -->
+        <button onclick="mostrarSeccion('reportes')" id="nav-reportes">
+            <i class="fas fa-chart-line"></i> Reportes
+        </button>
+        
+        <!-- 7. Configuración del sistema -->
+        <button onclick="mostrarSeccion('config')" id="nav-config">
+            <i class="fas fa-cog"></i> Configuración
+        </button>
+    </nav>
+</div>
 
                     <!-- Contenido -->
         <div class="flex-1 content p-6">
